@@ -22,7 +22,7 @@ Founder of **[iLeader](https://illeader.vercel.app/)** (AI consulting for Italia
 
 I'm an AI Engineer based near Lake Como, Italy. I work at the intersection of **large language models** and **real industrial problems** — the kind of company that makes physical products, has a paper-based technical office, and has never deployed a model in its life.
 
-My day-to-day is fine-tuning open-weight LLMs, building RAG pipelines over messy internal documentation, and wiring agents into the tools a business already uses. On the side I run two products of my own, and about 80 km a week on the road.
+My day-to-day is building RAG pipelines over messy internal documentation, wiring agents into the tools a business already uses, and training models when the task actually calls for it. On the side I run two products of my own, and about 80 km a week on the road.
 
 - Industrial Production Engineering — Politecnico di Milano (Lecco)
 - Marathon PB: **2h50** — which is also the reason MARC_AI exists
@@ -32,11 +32,32 @@ My day-to-day is fine-tuning open-weight LLMs, building RAG pipelines over messy
 
 ## Featured Projects
 
+### DecAI — RAG Assistant for a Manufacturing SME
+
+<img src="DecAI.jpg" width="100%" alt="DecAI conversational assistant interface">
+
+An internal conversational assistant built on a **retrieval-augmented generation** pipeline over a technical product catalogue — no fine-tuning involved. The value is in the retrieval layer, not in the weights: document ingestion and chunking of heterogeneous technical material, embedding and vector search, reranking, and grounded answer generation with citations back to the source documents.
+
+It supports the sales team during technical qualification and quoting, answering product questions from the actual catalogue instead of from a model's memory.
+
+<table>
+  <tr>
+    <td width="50%"><img src="DecAI1.jpg" width="100%" alt="DecAI retrieval view"></td>
+    <td width="50%"><img src="DecAI2.jpg" width="100%" alt="DecAI response with sources"></td>
+  </tr>
+</table>
+
+`Python` · `RAG` · `Vector Search` · `LangChain` · `LLM APIs`
+
+---
+
+### Other work
+
 <table>
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/3D-Editor-Deca-S.r.l.">
-        <img src="assets/3d-editor.gif" width="100%" alt="Web-based 3D GLB editor">
+        <img src="assets/3d-editor.png" width="100%" alt="Web-based 3D GLB editor">
       </a>
       <h3>Web 3D Product Configurator</h3>
       <p>Browser-based GLB editor for interactive product customisation. Variant handling, material swapping and real-time rendering, built to replace static PDF catalogues in a B2B sales process.</p>
@@ -75,10 +96,21 @@ My day-to-day is fine-tuning open-weight LLMs, building RAG pipelines over messy
 
 ---
 
+## What I Can Build
+
+**RAG systems** — the full pipeline: ingesting messy real-world documentation, chunking strategies that survive technical content, embeddings and vector search, reranking, and answer generation grounded in retrieved sources rather than model memory.
+
+**Model training** — fine-tuning open-weight LLMs (LoRA / QLoRA) when a task genuinely needs it, and reinforcement learning for robotic control in Isaac Lab and MuJoCo. I've learned to be honest about when training is the answer and when retrieval or better prompting is.
+
+**3D on the web** — interactive product configurators and GLB/CAD viewers in React and Three.js, plus the pipelines that get geometry from CAD to browser.
+
+**Agentic automation with Claude** — over a year of daily work with Claude, from Claude 3 Opus through Opus 5: the API, Claude Code, and MCP connectors wiring agents into the systems a business already runs. Most of what I ship is built this way.
+
+
 ## What I Do
 
 **AI Engineering @ Deca Srl** — *2025 → 2026*<br>
-Built **DecAI**, an internal conversational assistant on a fine-tuned Llama 3 8B (QLoRA) with a RAG pipeline over the product catalogue, supporting the sales team in technical qualification and quoting. Also delivered the 3D web configurator above, and a full **GEO** implementation (`llms.txt`, JSON-LD structured data, content rewriting) so the company's catalogue is correctly parsed and cited by generative search engines.
+Built **DecAI**, an internal conversational assistant powered by a RAG pipeline over the product catalogue — retrieval, reranking and grounded generation with source citations — supporting the sales team in technical qualification and quoting. Also delivered the 3D web configurator above, and a full **GEO** implementation (`llms.txt`, JSON-LD structured data, content rewriting) so the company's catalogue is correctly parsed and cited by generative search engines.
 
 **iLeader** — *Founder*<br>
 AI consulting and custom development for Italian SMEs: conversational assistants, RAG over internal documentation, and agentic automations built on Claude with MCP connectors into the systems a client already runs — CRM, mail, ERP, document storage. Plus generative search visibility work.
@@ -120,4 +152,3 @@ Open to AI engineering roles and consulting work — LLM integration, RAG system
 <sub>Lecco, Italy · <i>Se cerchi la versione italiana, <a href="README.it.md">è qui</a>.</i></sub>
 
 </div>
-
