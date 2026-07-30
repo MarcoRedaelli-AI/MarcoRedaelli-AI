@@ -75,7 +75,10 @@ Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'
   <tr>
     <td width="50%" valign="top">
       <a href="https://marcfitandrun.com">
-        <img src="marc-ai.png" width="100%" alt="Analisi telemetrica MARC_AI">
+        <img src="Immagine%202026-07-30%20150557.jpg" width="100%" alt="Sito Marc_fitandrun — home">
+      </a>
+      <a href="https://marcfitandrun.com">
+        <img src="Immagine%202026-07-30%20150748.jpg" width="100%" alt="Sito Marc_fitandrun — piani di allenamento">
       </a>
       <h3>MARC_AI — Training Intelligence</h3>
       <p>Il motore dietro il mio brand di coaching. Legge la telemetria Strava e un profilo atleta a 18 variabili, poi genera e adatta i piani di allenamento. Include una pipeline automatica Strava → Instagram Stories.</p>
