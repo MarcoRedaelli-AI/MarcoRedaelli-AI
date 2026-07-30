@@ -75,7 +75,10 @@ It supports the sales team during technical qualification and quoting, answering
   <tr>
     <td width="50%" valign="top">
       <a href="https://marcfitandrun.com">
-        <img src="marc-ai.png" width="100%" alt="MARC_AI telemetry analysis">
+        <img src="Immagine%202026-07-30%20150557.jpg" width="100%" alt="Marc_fitandrun coaching platform — home">
+      </a>
+      <a href="https://marcfitandrun.com">
+        <img src="Immagine%202026-07-30%20150748.jpg" width="100%" alt="Marc_fitandrun coaching platform — training plans">
       </a>
       <h3>MARC_AI — Training Intelligence</h3>
       <p>The engine behind my coaching brand. Ingests Strava telemetry and an 18-variable athlete profile, then generates and adapts training plans. Includes an automated Strava → Instagram Stories content pipeline.</p>
