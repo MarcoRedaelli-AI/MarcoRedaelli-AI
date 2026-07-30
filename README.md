@@ -1,4 +1,4 @@
-<div align="center">
+<dhiv align="center">
 
 **English** · [Italiano](README.it.md)
 
@@ -57,7 +57,7 @@ It supports the sales team during technical qualification and quoting, answering
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/3D-Editor-Deca-S.r.l.">
-        <img src="assets/3d-editor.png" width="100%" alt="Web-based 3D GLB editor">
+        <img src="3d-editor.png" width="100%" alt="Web-based 3D GLB editor">
       </a>
       <h3>Web 3D Product Configurator</h3>
       <p>Browser-based GLB editor for interactive product customisation. Variant handling, material swapping and real-time rendering, built to replace static PDF catalogues in a B2B sales process.</p>
@@ -65,7 +65,7 @@ It supports the sales team during technical qualification and quoting, answering
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/Unitree-G1-Robot">
-        <img src="assets/unitree-g1.png" width="100%" alt="Unitree G1 humanoid simulation">
+        <img src="unitree-g1.png" width="100%" alt="Unitree G1 humanoid simulation">
       </a>
       <h3>Unitree G1 — Humanoid RL</h3>
       <p>SDK integration, simulation and reinforcement learning environments for the Unitree G1 humanoid. Locomotion policy training in Isaac Lab and MuJoCo, plus configuration and deployment scripts.</p>
@@ -75,7 +75,7 @@ It supports the sales team during technical qualification and quoting, answering
   <tr>
     <td width="50%" valign="top">
       <a href="https://marcfitandrun.com">
-        <img src="assets/marc-ai.png" width="100%" alt="MARC_AI telemetry analysis">
+        <img src="marc-ai.png" width="100%" alt="MARC_AI telemetry analysis">
       </a>
       <h3>MARC_AI — Training Intelligence</h3>
       <p>The engine behind my coaching brand. Ingests Strava telemetry and an 18-variable athlete profile, then generates and adapts training plans. Includes an automated Strava → Instagram Stories content pipeline.</p>
@@ -83,7 +83,7 @@ It supports the sales team during technical qualification and quoting, answering
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/Visualizzatore-STEP">
-        <img src="assets/step-viewer.png" width="100%" alt="STEP file viewer">
+        <img src="step-viewer.png" width="100%" alt="STEP file viewer">
       </a>
       <h3>STEP File Viewer</h3>
       <p>Python parser and viewer for STEP CAD files — geometry extraction, metadata reading and mesh conversion. Groundwork for automated CAD-to-web pipelines.</p>
