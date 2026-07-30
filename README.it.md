@@ -22,7 +22,7 @@ Fondatore di **[iLeader](https://illeader.vercel.app/)** (consulenza AI per PMI 
 
 Sono un AI Engineer e vivo vicino al Lago di Como. Lavoro nel punto in cui i **large language model** incontrano i **problemi industriali reali**: aziende che producono oggetti fisici, con un ufficio tecnico che gira ancora su PDF e che non hanno mai messo un modello in produzione.
 
-Nel concreto: fine-tuning di LLM open-weight, pipeline RAG su documentazione interna disordinata, agenti collegati agli strumenti che l'azienda già usa. In parallelo porto avanti due prodotti miei, e circa 80 km a settimana di corsa.
+Nel concreto: pipeline RAG su documentazione interna disordinata, agenti collegati agli strumenti che l'azienda già usa, e training di modelli quando il task lo richiede davvero. In parallelo porto avanti due prodotti miei, e circa 80 km a settimana di corsa.
 
 - Ingegneria della Produzione Industriale — Politecnico di Milano (polo di Lecco)
 - PB maratona: **2h50** — che è anche il motivo per cui esiste MARC_AI
@@ -32,11 +32,32 @@ Nel concreto: fine-tuning di LLM open-weight, pipeline RAG su documentazione int
 
 ## Progetti in evidenza
 
+### DecAI — Assistente RAG per una PMI manifatturiera
+
+<img src="DecAI.jpg" width="100%" alt="Interfaccia dell'assistente conversazionale DecAI">
+
+Assistente conversazionale interno costruito su una pipeline di **retrieval-augmented generation** sul catalogo tecnico di prodotto — **senza fine-tuning**. Il valore sta nel layer di retrieval, non nei pesi del modello: ingestion e chunking di documentazione tecnica eterogenea, embedding e ricerca vettoriale, reranking, e generazione di risposte ancorate ai documenti sorgente con citazioni verificabili.
+
+Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'offerta, rispondendo sulla base del catalogo reale e non della memoria del modello.
+
+<table>
+  <tr>
+    <td width="50%"><img src="DecAI1.jpg" width="100%" alt="DecAI vista retrieval"></td>
+    <td width="50%"><img src="DecAI2.jpg" width="100%" alt="DecAI risposta con fonti"></td>
+  </tr>
+</table>
+
+`Python` · `RAG` · `Vector Search` · `LangChain` · `LLM APIs`
+
+---
+
+### Altri progetti
+
 <table>
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/3D-Editor-Deca-S.r.l.">
-        <img src="assets/3d-editor.gif" width="100%" alt="Editor 3D GLB web">
+        <img src="assets/3d-editor.png" width="100%" alt="Editor 3D GLB web">
       </a>
       <h3>Configuratore 3D di prodotto</h3>
       <p>Editor GLB in browser per la personalizzazione interattiva del prodotto. Gestione varianti, cambio materiali e rendering in tempo reale — pensato per sostituire il catalogo PDF statico in un processo di vendita B2B.</p>
@@ -75,10 +96,21 @@ Nel concreto: fine-tuning di LLM open-weight, pipeline RAG su documentazione int
 
 ---
 
+## Cosa so costruire
+
+**Sistemi RAG** — l'intera pipeline: ingestion di documentazione reale e disordinata, strategie di chunking che tengono su contenuti tecnici, embedding e ricerca vettoriale, reranking, e generazione di risposte ancorate alle fonti recuperate anziché alla memoria del modello.
+
+**Training di modelli** — fine-tuning di LLM open-weight (LoRA / QLoRA) quando il task lo richiede davvero, e reinforcement learning per il controllo robotico in Isaac Lab e MuJoCo. Ho imparato a essere onesto su quando serve addestrare e quando invece bastano retrieval o un prompting migliore.
+
+**3D sul web** — configuratori di prodotto interattivi e viewer GLB/CAD in React e Three.js, comprese le pipeline che portano la geometria dal CAD al browser.
+
+**Automazioni agentiche con Claude** — oltre un anno di lavoro quotidiano con Claude, da Claude 3 Opus fino a Opus 5: API, Claude Code e connettori MCP per collegare agenti ai sistemi che l'azienda già usa. La maggior parte di ciò che rilascio nasce così.
+
+
 ## Cosa faccio
 
 **AI Engineering @ Deca Srl** — *2025 → 2026*<br>
-Ho costruito **DecAI**, assistente conversazionale interno basato su Llama 3 8B fine-tuned (QLoRA) con pipeline RAG sul catalogo prodotti, a supporto della forza vendita nella qualificazione tecnica e nella costruzione dell'offerta. Ho realizzato anche il configuratore 3D web qui sopra e un'implementazione completa di **GEO** (`llms.txt`, dati strutturati JSON-LD, riscrittura dei contenuti), perché il catalogo aziendale venisse interpretato e citato correttamente dai motori di ricerca generativi.
+Ho costruito **DecAI**, assistente conversazionale interno basato su una pipeline RAG sul catalogo prodotti — retrieval, reranking e generazione ancorata alle fonti con citazioni — a supporto della forza vendita nella qualificazione tecnica e nella costruzione dell'offerta. Ho realizzato anche il configuratore 3D web qui sopra e un'implementazione completa di **GEO** (`llms.txt`, dati strutturati JSON-LD, riscrittura dei contenuti), perché il catalogo aziendale venisse interpretato e citato correttamente dai motori di ricerca generativi.
 
 **iLeader** — *Founder*<br>
 Consulenza AI e sviluppo su misura per PMI italiane: assistenti conversazionali, RAG sulla documentazione interna e automazioni agentiche costruite su Claude con connettori MCP verso i sistemi che il cliente già usa — CRM, mail, gestionale, storage documentale. In aggiunta, lavoro di visibilità sui motori generativi.
