@@ -57,7 +57,7 @@ Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/3D-Editor-Deca-S.r.l.">
-        <img src="assets/3d-editor.png" width="100%" alt="Editor 3D GLB web">
+        <img src="3d-editor.png" width="100%" alt="Editor 3D GLB web">
       </a>
       <h3>Configuratore 3D di prodotto</h3>
       <p>Editor GLB in browser per la personalizzazione interattiva del prodotto. Gestione varianti, cambio materiali e rendering in tempo reale — pensato per sostituire il catalogo PDF statico in un processo di vendita B2B.</p>
@@ -65,7 +65,7 @@ Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/Unitree-G1-Robot">
-        <img src="assets/unitree-g1.png" width="100%" alt="Simulazione umanoide Unitree G1">
+        <img src="unitree-g1.png" width="100%" alt="Simulazione umanoide Unitree G1">
       </a>
       <h3>Unitree G1 — RL su umanoide</h3>
       <p>Integrazione SDK, simulazione e ambienti di reinforcement learning per l'umanoide Unitree G1. Training di policy di locomozione in Isaac Lab e MuJoCo, più script di configurazione e deploy.</p>
@@ -75,7 +75,7 @@ Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'
   <tr>
     <td width="50%" valign="top">
       <a href="https://marcfitandrun.com">
-        <img src="assets/marc-ai.png" width="100%" alt="Analisi telemetrica MARC_AI">
+        <img src="marc-ai.png" width="100%" alt="Analisi telemetrica MARC_AI">
       </a>
       <h3>MARC_AI — Training Intelligence</h3>
       <p>Il motore dietro il mio brand di coaching. Legge la telemetria Strava e un profilo atleta a 18 variabili, poi genera e adatta i piani di allenamento. Include una pipeline automatica Strava → Instagram Stories.</p>
@@ -83,7 +83,7 @@ Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/marco2024redaelli-hash/Visualizzatore-STEP">
-        <img src="assets/step-viewer.png" width="100%" alt="Visualizzatore file STEP">
+        <img src="step-viewer.png" width="100%" alt="Visualizzatore file STEP">
       </a>
       <h3>Visualizzatore STEP</h3>
       <p>Parser e viewer Python per file CAD STEP: estrazione geometrie, lettura metadati e conversione in mesh. Base per pipeline automatiche da CAD a web.</p>
