@@ -1,13 +1,13 @@
 <div align="center">
 
-[English](README.md) · **Italiano**
+**English** · [Italiano](README.it.md)
 
 # Marco Redaelli
 
-### AI Engineer & Runner — Lecco, Italia
+### AI Engineer & Runner — Lecco, Italy
 
-Costruisco prodotti AI, software e business digitali.<br>
-Fondatore di **[iLeader](https://illeader.vercel.app/)** (consulenza AI per PMI italiane) e **[Marc_fitandrun](https://marcfitandrun.com)** (coaching per la corsa basato sui dati).
+Building AI products, software and digital businesses.<br>
+Founder of **[iLeader](https://illeader.vercel.app/)** (AI consulting for Italian SMEs) and **[Marc_fitandrun](https://marcfitandrun.com)** (data-driven running coaching).
 
 [![Website](https://img.shields.io/badge/iLeader-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://illeader.vercel.app/)
 [![Marc_fitandrun](https://img.shields.io/badge/Marc__fitandrun-FC5200?style=for-the-badge&logo=strava&logoColor=white)](https://marcfitandrun.com)
@@ -19,104 +19,110 @@ Fondatore di **[iLeader](https://illeader.vercel.app/)** (consulenza AI per PMI 
 
 ---
 
-## Chi sono
+## About
 
-Sono Marco Redaelli, AI Engineer, e vivo vicino al Lago di Como. Lavoro nel punto in cui i **large language model** incontrano i **problemi industriali reali**: aziende che producono oggetti fisici, con un ufficio tecnico che gira ancora su PDF e che non hanno mai messo un modello in produzione.
+I'm Marco Redaelli, an AI Engineer based near Lake Como, Italy. I work at the intersection of **large language models** and **real industrial problems** — the kind of company that makes physical products, has a paper-based technical office, and has never deployed a model in its life.
 
-Nel concreto: pipeline RAG su documentazione interna disordinata, agenti collegati agli strumenti che l'azienda già usa, e training di modelli quando il task lo richiede davvero. In parallelo porto avanti due prodotti miei, e circa 80 km a settimana di corsa.
+My day-to-day is building RAG pipelines over messy internal documentation, wiring agents into the tools a business already uses, and training models when the task actually calls for it. On the side I run two products of my own, and about 80 km a week on the road.
 
-- Ingegneria della Produzione Industriale — Politecnico di Milano (polo di Lecco)
-- Con base a Valgreghentino, provincia di Lecco — lavoro con PMI in tutta la Lombardia
-- PB maratona: **2h50** — che è anche il motivo per cui esiste MARC_AI
-- Interessi attuali: workflow agentici, MCP, embodied AI, visibilità sui motori generativi
-
----
-
-## Progetti in evidenza
-
-Tre sono nati in **Deca Srl**, azienda che produce sistemi di asservimento industriale: un assistente di retrieval, uno strumento di vendita 3D e un layer di visibilità sui motori generativi. Il quarto è un prodotto mio.
+- Industrial Production Engineering — Politecnico di Milano (Lecco)
+- Based in Valgreghentino, province of Lecco — working with SMEs across Lombardy
+- Marathon PB: **2h50** — which is also the reason MARC_AI exists
+- Currently interested in: agentic workflows, MCP, embodied AI, generative search visibility
 
 ---
 
-### 1 · DecAI — Assistente RAG per una PMI manifatturiera
+## Featured Projects
 
-<img src="DecAI.png" width="100%" alt="Assistente conversazionale DecAI che risponde sul catalogo tecnico di prodotto">
+Three of these were built for **Deca Srl**, a manufacturer of industrial feeding systems: a retrieval assistant, a 3D sales tool, and a generative-search visibility layer. The fourth is my own product.
 
-Assistente conversazionale interno costruito su una pipeline di **retrieval-augmented generation** sul catalogo tecnico di prodotto — **senza fine-tuning**. Il valore sta nel layer di retrieval, non nei pesi del modello: ingestion e chunking di documentazione tecnica eterogenea, embedding e ricerca vettoriale, reranking, e generazione di risposte ancorate ai documenti sorgente con citazioni verificabili.
+---
 
-Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'offerta, rispondendo sulla base del catalogo reale e non della memoria del modello. L'assistente è vincolato ai prodotti dell'azienda: se la domanda esce dal catalogo si ferma, invece di improvvisare.
+### 1 · DecAI — RAG Assistant for a Manufacturing SME
+
+<img src="DecAI_1.png" width="100%" alt="DecAI conversational assistant answering product questions from a technical catalogue">
+
+An internal conversational assistant built on a **retrieval-augmented generation** pipeline over a technical product catalogue — no fine-tuning involved. The value is in the retrieval layer, not in the weights: document ingestion and chunking of heterogeneous technical material, embedding and vector search, reranking, and grounded answer generation with citations back to the source documents.
+
+It supports the sales team during technical qualification and quoting, answering product questions from the actual catalogue instead of from a model's memory. The assistant is scoped to the company's own products: it declines rather than improvises when a question falls outside the catalogue.
 
 `Python` · `RAG` · `Vector Search` · `LangChain` · `LLM APIs`
 
 ---
 
-### 2 · DECA 3D Editor — Configuratore di prodotto con assistente AI integrato
+### 2 · DECA 3D Editor — Product Configurator with an Embedded AI Assistant
 
-<a href="https://glb-3d-editor.pages.dev/"><img src="3d-editor.png" width="100%" alt="Configuratore GLB in browser con l'assistente DecAI affiancato alla vista 3D"></a>
+<a href="https://glb-3d-editor.pages.dev/"><img src="3d-editor_3.png" width="100%" alt="Browser-based GLB product configurator with the DecAI assistant docked alongside the 3D viewport"></a>
 
-Editor GLB/GLTF in browser per sistemi di asservimento industriale, pensato per sostituire il catalogo PDF statico in un processo di vendita B2B. Gestione varianti, cambio materiali, rendering in tempo reale, viewer condivisibile e generazione 3D a partire da una foto o da una descrizione testuale.
+A browser-based GLB/GLTF editor for industrial feeding systems, built to replace a static PDF catalogue in a B2B sales process. Variant handling, material swapping, real-time rendering, a shareable viewer, and 3D generation from a photo or a text description.
 
-Nella versione attuale configuratore e assistente RAG sono un prodotto solo: DecAI vive dentro l'editor, quindi il potenziale cliente può chiedere quale taglia serve per la sua applicazione, aprire il modello nel viewer 3D direttamente dalla risposta, e da lì arrivare alla richiesta di preventivo — senza uscire dalla pagina e senza aspettare un commerciale.
+In its current version the configurator and the RAG assistant are a single product: DecAI sits inside the editor, so a prospect can ask which size fits their application, have the model opened in the 3D viewer from the answer itself, and go from there to a quote request — without leaving the page or waiting on a sales rep.
 
-`React` · `Three.js` · `WebGL` · `Cloudflare Pages` — [demo live](https://glb-3d-editor.pages.dev/) · [repository](https://github.com/MarcoRedaelli-AI/3D-Editor-Deca-S.r.l.)
+`React` · `Three.js` · `WebGL` · `Cloudflare Pages` — [live demo](https://glb-3d-editor.pages.dev/) · [repository](https://github.com/MarcoRedaelli-AI/3D-Editor-Deca-S.r.l.)
 
 ---
 
-### 3 · GEO — Rendere un'azienda manifatturiera leggibile dalle AI
+### 3 · GEO — Making a Manufacturer Machine-Readable
 
-I motori generativi non citano ciò che non riescono a interpretare. Questa PMI aveva anni di impianti consegnati documentati come record di commessa interni e PDF — invisibili a qualunque modello debba rispondere a *"chi produce alimentatori vibranti in Lombardia"*.
+<img src="geo-deca.png" width="100%" alt="ChatGPT, Claude and Gemini — the generative engines this structured-data work targets">
 
-Ho costruito una pipeline di generazione che trasforma quello storico produttivo in cento schede strutturate, una per impianto consegnato, organizzate per famiglia di prodotto, ciascuna con dati tecnici, media e markup JSON-LD. Insieme: un manifesto `llms.txt`, HTML semantico e una riscrittura dei contenuti di catalogo perché sopravvivano intatti a chunking e retrieval.
+Generative engines cite what they can parse. This manufacturer's delivered systems lived in two places that never spoke to each other: a spreadsheet of case-study records, and a network archive of 3D models organised by component rather than by job order. Nothing connected a record to its actual project files, and nothing on the public pages told a model what any of it was.
 
-Il punto non sono le keyword. È che il lavoro reale, specifico e verificabile di un fornitore diventa materiale recuperabile su cui un modello può ancorare una risposta.
+I inventoried the archive component by component and linked every record to its real files, then built a navigable prototype catalogue — a hundred pages across 35 product families, grouped by product acronym so that site, spreadsheet and archive finally share one hierarchy.
 
-`Static Site Generation` · `JSON-LD` · `llms.txt` · `Schema.org` · `Firebase Hosting`
+Then the finding that mattered. Forty-two structured-data files had been written and were valid — and not one of them was on a page. No `application/ld+json` block existed anywhere in the published source. Correct content, living in a spreadsheet, invisible to every crawler.
+
+So I generated the real thing: a single linked graph of **65 nodes** covering the company entity, the collection page, 19 per-family lists and 42 product schemas. Twelve invented properties — outside the schema.org vocabulary, therefore silently ignored by validators — became **334 `PropertyValue` entries** under `additionalProperty`: same content, correct container. Standard properties the models actually read (`url`, `sku`, `brand`, `manufacturer`, `isSimilarTo`) were populated from data already sitting in the sheet. Verified before delivery: 65 unique identifiers, 294 internal references resolved, zero terms outside the vocabulary.
+
+The point isn't keywords. It's that a supplier's real, specific, verifiable work becomes retrievable evidence a model can ground an answer in.
+
+`JSON-LD` · `Schema.org` · `llms.txt` · `Static Site Generation` · `Firebase Hosting`
 
 ---
 
 ### 4 · MARC_AI — Training Intelligence
 
-<a href="https://marcfitandrun.com"><img src="marc-ai.png" width="100%" alt="Piattaforma di coaching Marc_fitandrun basata sul motore MARC_AI"></a>
+<a href="https://marcfitandrun.com"><img src="marc-ai.png" width="100%" alt="Marc_fitandrun coaching platform powered by the MARC_AI training engine"></a>
 
-Il motore dietro il mio brand di coaching. Legge la telemetria Strava e un profilo atleta a 18 variabili, poi genera e adatta i piani di allenamento. Attorno gira uno stack di marketing che si automatizza da sé: una pipeline che trasforma le attività Strava in Instagram Stories, una newsletter settimanale e un funnel di onboarding che rientra direttamente nel modello.
+The engine behind my own coaching brand. It ingests Strava telemetry and an 18-variable athlete profile, then generates and adapts training plans. Around it sits a marketing stack that runs itself: a Strava-triggered pipeline that renders activity data into Instagram Stories, a weekly newsletter, and an onboarding funnel that feeds straight back into the model.
 
 `Python` · `FastAPI` · `Strava API` · `PIL` · `Claude API` — [marcfitandrun.com](https://marcfitandrun.com)
 
 ---
 
-### Altri progetti
+### Other work
 
-- [**Unitree G1 — RL su umanoide**](https://github.com/MarcoRedaelli-AI/Unitree-G1-Robot) — integrazione SDK, simulazione e ambienti di reinforcement learning per l'umanoide Unitree G1. Training di policy di locomozione in Isaac Lab e MuJoCo. `Python` `Isaac Lab` `MuJoCo` `RL`
-- [**Visualizzatore STEP**](https://github.com/MarcoRedaelli-AI/Visualizzatore-STEP) — parser e viewer Python per file CAD STEP: estrazione geometrie, lettura metadati, conversione in mesh. Base per pipeline automatiche da CAD a web. `Python` `OpenCascade` `CAD`
-- [**Openclaw**](https://github.com/MarcoRedaelli-AI/Openclaw) — guida HTML interattiva per installare e configurare OpenClaw su Raspberry Pi 4.
-- [**Claude Project**](https://github.com/MarcoRedaelli-AI/Claude-Project) — esperimenti costruiti con le API Anthropic e MCP.
-
----
-
-## Cosa so costruire
-
-**Sistemi RAG** — l'intera pipeline: ingestion di documentazione reale e disordinata, strategie di chunking che tengono su contenuti tecnici, embedding e ricerca vettoriale, reranking, e generazione di risposte ancorate alle fonti recuperate anziché alla memoria del modello.
-
-**Training di modelli** — fine-tuning di LLM open-weight (LoRA / QLoRA) quando il task lo richiede davvero, e reinforcement learning per il controllo robotico in Isaac Lab e MuJoCo. Ho imparato a essere onesto su quando serve addestrare e quando invece bastano retrieval o un prompting migliore.
-
-**3D sul web** — configuratori di prodotto interattivi e viewer GLB/CAD in React e Three.js, comprese le pipeline che portano la geometria dal CAD al browser.
-
-**Visibilità sui motori generativi (GEO)** — dati strutturati, `llms.txt` e architettura dei contenuti perché il lavoro reale di un'azienda diventi recuperabile e citabile dalle AI, invece che invisibile.
-
-**Automazioni agentiche con Claude** — oltre un anno di lavoro quotidiano con Claude, da Claude 3 Opus fino a Opus 5: API, Claude Code e connettori MCP per collegare agenti ai sistemi che l'azienda già usa. La maggior parte di ciò che rilascio nasce così.
+- [**Unitree G1 — Humanoid RL**](https://github.com/MarcoRedaelli-AI/Unitree-G1-Robot) — SDK integration, simulation and reinforcement learning environments for the Unitree G1 humanoid. Locomotion policy training in Isaac Lab and MuJoCo. `Python` `Isaac Lab` `MuJoCo` `RL`
+- [**STEP File Viewer**](https://github.com/MarcoRedaelli-AI/Visualizzatore-STEP) — Python parser and viewer for STEP CAD files: geometry extraction, metadata reading, mesh conversion. Groundwork for CAD-to-web pipelines. `Python` `OpenCascade` `CAD`
+- [**Openclaw**](https://github.com/MarcoRedaelli-AI/Openclaw) — interactive HTML guide for installing and configuring OpenClaw on a Raspberry Pi 4.
+- [**Claude Project**](https://github.com/MarcoRedaelli-AI/Claude-Project) — experiments built with the Anthropic API and MCP.
 
 ---
 
-## Cosa faccio
+## What I Can Build
+
+**RAG systems** — the full pipeline: ingesting messy real-world documentation, chunking strategies that survive technical content, embeddings and vector search, reranking, and answer generation grounded in retrieved sources rather than model memory.
+
+**Model training** — fine-tuning open-weight LLMs (LoRA / QLoRA) when a task genuinely needs it, and reinforcement learning for robotic control in Isaac Lab and MuJoCo. I've learned to be honest about when training is the answer and when retrieval or better prompting is.
+
+**3D on the web** — interactive product configurators and GLB/CAD viewers in React and Three.js, plus the pipelines that get geometry from CAD to browser.
+
+**Generative search visibility (GEO)** — structured data, `llms.txt`, and content architecture that makes a company's real work retrievable and citable by AI search engines rather than invisible to them.
+
+**Agentic automation with Claude** — over a year of daily work with Claude, from Claude 3 Opus through Opus 5: the API, Claude Code, and MCP connectors wiring agents into the systems a business already runs. Most of what I ship is built this way.
+
+---
+
+## What I Do
 
 **AI Engineering @ Deca Srl** — *2025 → 2026*<br>
-Ho realizzato i tre progetti qui sopra: DecAI, il configuratore 3D e l'implementazione GEO — un assistente di retrieval per la forza vendita, uno strumento di vendita in browser che sostituisce il catalogo PDF, e un layer di contenuti strutturati che rende lo storico produttivo dell'azienda citabile dai motori di ricerca generativi.
+Delivered the three projects above: DecAI, the 3D configurator, and the GEO implementation — a retrieval assistant for the sales team, a browser-based sales tool replacing the PDF catalogue, and a structured-content layer that makes the company's production history citable by generative search engines.
 
 **iLeader** — *Founder*<br>
-Consulenza AI e sviluppo su misura per PMI italiane: assistenti conversazionali, RAG sulla documentazione interna e automazioni agentiche costruite su Claude con connettori MCP verso i sistemi che il cliente già usa — CRM, mail, gestionale, storage documentale. In aggiunta, lavoro di visibilità sui motori generativi.
+AI consulting and custom development for Italian SMEs: conversational assistants, RAG over internal documentation, and agentic automations built on Claude with MCP connectors into the systems a client already runs — CRM, mail, ERP, document storage. Plus generative search visibility work.
 
 **Marc_fitandrun** — *Founder & Running Coach*<br>
-Coaching data-driven per corsa su strada e trail. Audit telemetrici della performance, programmi di coaching continuativo e lo stack di marketing automatizzato descritto sopra.
+Data-driven coaching for road and trail running. Telemetric performance audits, continuous coaching programmes, and the automated marketing stack described above.
 
 ---
 
@@ -143,12 +149,12 @@ Coaching data-driven per corsa su strada e trail. Audit telemetrici della perfor
 
 <div align="center">
 
-### Parliamone
+### Let's talk
 
-Disponibile per ruoli di AI engineering e progetti di consulenza — integrazione LLM, sistemi RAG, visibilità sui motori generativi, automazioni agentiche per PMI.
+Open to AI engineering roles and consulting work — LLM integration, RAG systems, generative search visibility, agentic automation for SMEs.
 
 **marco2024redaelli@gmail.com**
 
-<sub>Marco Redaelli · Lecco, Italia · <i>Looking for the English version? <a href="README.md">Here</a>.</i></sub>
+<sub>Marco Redaelli · Lecco, Italy · <i>Se cerchi la versione italiana, <a href="README.it.md">è qui</a>.</i></sub>
 
 </div>
