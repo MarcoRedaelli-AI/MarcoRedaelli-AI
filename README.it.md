@@ -34,71 +34,62 @@ Nel concreto: pipeline RAG su documentazione interna disordinata, agenti collega
 
 ## Progetti in evidenza
 
-### DecAI — Assistente RAG per una PMI manifatturiera
+Tre sono nati in **Deca Srl**, azienda che produce sistemi di asservimento industriale: un assistente di retrieval, uno strumento di vendita 3D e un layer di visibilità sui motori generativi. Il quarto è un prodotto mio.
 
-<img src="DecAI.jpg" width="100%" alt="Interfaccia dell'assistente conversazionale DecAI">
+---
+
+### 1 · DecAI — Assistente RAG per una PMI manifatturiera
+
+<img src="DecAI.png" width="100%" alt="Assistente conversazionale DecAI che risponde sul catalogo tecnico di prodotto">
 
 Assistente conversazionale interno costruito su una pipeline di **retrieval-augmented generation** sul catalogo tecnico di prodotto — **senza fine-tuning**. Il valore sta nel layer di retrieval, non nei pesi del modello: ingestion e chunking di documentazione tecnica eterogenea, embedding e ricerca vettoriale, reranking, e generazione di risposte ancorate ai documenti sorgente con citazioni verificabili.
 
-Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'offerta, rispondendo sulla base del catalogo reale e non della memoria del modello.
-
-<table>
-  <tr>
-    <td width="50%"><img src="DecAI1.jpg" width="100%" alt="DecAI vista retrieval"></td>
-    <td width="50%"><img src="DecAI2.jpg" width="100%" alt="DecAI risposta con fonti"></td>
-  </tr>
-</table>
+Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'offerta, rispondendo sulla base del catalogo reale e non della memoria del modello. L'assistente è vincolato ai prodotti dell'azienda: se la domanda esce dal catalogo si ferma, invece di improvvisare.
 
 `Python` · `RAG` · `Vector Search` · `LangChain` · `LLM APIs`
 
 ---
 
-### Configuratore 3D di prodotto
+### 2 · DECA 3D Editor — Configuratore di prodotto con assistente AI integrato
 
-[<img src="3d-editor.png" width="100%" alt="Editor 3D GLB web per configurazione prodotto">](https://github.com/MarcoRedaelli-AI/3D-Editor-Deca-S.r.l.)
+<a href="https://glb-3d-editor.pages.dev/"><img src="3d-editor.png" width="100%" alt="Configuratore GLB in browser con l'assistente DecAI affiancato alla vista 3D"></a>
 
-Editor GLB in browser per la personalizzazione interattiva del prodotto. Gestione varianti, cambio materiali e rendering in tempo reale — pensato per sostituire il catalogo PDF statico in un processo di vendita B2B.
+Editor GLB/GLTF in browser per sistemi di asservimento industriale, pensato per sostituire il catalogo PDF statico in un processo di vendita B2B. Gestione varianti, cambio materiali, rendering in tempo reale, viewer condivisibile e generazione 3D a partire da una foto o da una descrizione testuale.
 
-`React` · `Three.js` · `WebGL` · `Cloudflare Pages` — [repository](https://github.com/MarcoRedaelli-AI/3D-Editor-Deca-S.r.l.)
+Nella versione attuale configuratore e assistente RAG sono un prodotto solo: DecAI vive dentro l'editor, quindi il potenziale cliente può chiedere quale taglia serve per la sua applicazione, aprire il modello nel viewer 3D direttamente dalla risposta, e da lì arrivare alla richiesta di preventivo — senza uscire dalla pagina e senza aspettare un commerciale.
 
----
-
-### Unitree G1 — RL su umanoide
-
-[<img src="unitree-g1.png" width="100%" alt="Simulazione del robot umanoide Unitree G1">](https://github.com/MarcoRedaelli-AI/Unitree-G1-Robot)
-
-Integrazione SDK, simulazione e ambienti di reinforcement learning per l'umanoide Unitree G1. Training di policy di locomozione in Isaac Lab e MuJoCo, più script di configurazione e deploy.
-
-`Python` · `Isaac Lab` · `MuJoCo` · `RL` — [repository](https://github.com/MarcoRedaelli-AI/Unitree-G1-Robot)
+`React` · `Three.js` · `WebGL` · `Cloudflare Pages` — [demo live](https://glb-3d-editor.pages.dev/) · [repository](https://github.com/MarcoRedaelli-AI/3D-Editor-Deca-S.r.l.)
 
 ---
 
-### MARC_AI — Training Intelligence
+### 3 · GEO — Rendere un'azienda manifatturiera leggibile dalle AI
 
-<table>
-  <tr>
-    <td width="50%"><a href="https://marcfitandrun.com"><img src="marcfitandrun-home.jpg" width="100%" alt="Sito Marc_fitandrun — home"></a></td>
-    <td width="50%"><a href="https://marcfitandrun.com"><img src="marcfitandrun-plans.jpg" width="100%" alt="Sito Marc_fitandrun — piani di allenamento"></a></td>
-  </tr>
-</table>
+I motori generativi non citano ciò che non riescono a interpretare. Questa PMI aveva anni di impianti consegnati documentati come record di commessa interni e PDF — invisibili a qualunque modello debba rispondere a *"chi produce alimentatori vibranti in Lombardia"*.
 
-Il motore dietro il mio brand di coaching. Legge la telemetria Strava e un profilo atleta a 18 variabili, poi genera e adatta i piani di allenamento. Include una pipeline automatica Strava → Instagram Stories.
+Ho costruito una pipeline di generazione che trasforma quello storico produttivo in cento schede strutturate, una per impianto consegnato, organizzate per famiglia di prodotto, ciascuna con dati tecnici, media e markup JSON-LD. Insieme: un manifesto `llms.txt`, HTML semantico e una riscrittura dei contenuti di catalogo perché sopravvivano intatti a chunking e retrieval.
+
+Il punto non sono le keyword. È che il lavoro reale, specifico e verificabile di un fornitore diventa materiale recuperabile su cui un modello può ancorare una risposta.
+
+`Static Site Generation` · `JSON-LD` · `llms.txt` · `Schema.org` · `Firebase Hosting`
+
+---
+
+### 4 · MARC_AI — Training Intelligence
+
+<a href="https://marcfitandrun.com"><img src="marc-ai.png" width="100%" alt="Piattaforma di coaching Marc_fitandrun basata sul motore MARC_AI"></a>
+
+Il motore dietro il mio brand di coaching. Legge la telemetria Strava e un profilo atleta a 18 variabili, poi genera e adatta i piani di allenamento. Attorno gira uno stack di marketing che si automatizza da sé: una pipeline che trasforma le attività Strava in Instagram Stories, una newsletter settimanale e un funnel di onboarding che rientra direttamente nel modello.
 
 `Python` · `FastAPI` · `Strava API` · `PIL` · `Claude API` — [marcfitandrun.com](https://marcfitandrun.com)
 
 ---
 
-### Visualizzatore STEP
+### Altri progetti
 
-[<img src="step-viewer.png" width="100%" alt="Visualizzatore di file CAD STEP">](https://github.com/MarcoRedaelli-AI/Visualizzatore-STEP)
-
-Parser e viewer Python per file CAD STEP: estrazione geometrie, lettura metadati e conversione in mesh. Base per pipeline automatiche da CAD a web.
-
-`Python` · `OpenCascade` · `CAD` — [repository](https://github.com/MarcoRedaelli-AI/Visualizzatore-STEP)
-
----
-
-**Anche qui:** [Openclaw](https://github.com/MarcoRedaelli-AI/Openclaw) — guida HTML interattiva per installare e configurare OpenClaw su Raspberry Pi 4 · [Claude Project](https://github.com/MarcoRedaelli-AI/Claude-Project) — esperimenti costruiti con le API Anthropic e MCP.
+- [**Unitree G1 — RL su umanoide**](https://github.com/MarcoRedaelli-AI/Unitree-G1-Robot) — integrazione SDK, simulazione e ambienti di reinforcement learning per l'umanoide Unitree G1. Training di policy di locomozione in Isaac Lab e MuJoCo. `Python` `Isaac Lab` `MuJoCo` `RL`
+- [**Visualizzatore STEP**](https://github.com/MarcoRedaelli-AI/Visualizzatore-STEP) — parser e viewer Python per file CAD STEP: estrazione geometrie, lettura metadati, conversione in mesh. Base per pipeline automatiche da CAD a web. `Python` `OpenCascade` `CAD`
+- [**Openclaw**](https://github.com/MarcoRedaelli-AI/Openclaw) — guida HTML interattiva per installare e configurare OpenClaw su Raspberry Pi 4.
+- [**Claude Project**](https://github.com/MarcoRedaelli-AI/Claude-Project) — esperimenti costruiti con le API Anthropic e MCP.
 
 ---
 
@@ -110,6 +101,8 @@ Parser e viewer Python per file CAD STEP: estrazione geometrie, lettura metadati
 
 **3D sul web** — configuratori di prodotto interattivi e viewer GLB/CAD in React e Three.js, comprese le pipeline che portano la geometria dal CAD al browser.
 
+**Visibilità sui motori generativi (GEO)** — dati strutturati, `llms.txt` e architettura dei contenuti perché il lavoro reale di un'azienda diventi recuperabile e citabile dalle AI, invece che invisibile.
+
 **Automazioni agentiche con Claude** — oltre un anno di lavoro quotidiano con Claude, da Claude 3 Opus fino a Opus 5: API, Claude Code e connettori MCP per collegare agenti ai sistemi che l'azienda già usa. La maggior parte di ciò che rilascio nasce così.
 
 ---
@@ -117,13 +110,13 @@ Parser e viewer Python per file CAD STEP: estrazione geometrie, lettura metadati
 ## Cosa faccio
 
 **AI Engineering @ Deca Srl** — *2025 → 2026*<br>
-Ho costruito **DecAI**, assistente conversazionale interno basato su una pipeline RAG sul catalogo prodotti — retrieval, reranking e generazione ancorata alle fonti con citazioni — a supporto della forza vendita nella qualificazione tecnica e nella costruzione dell'offerta. Ho realizzato anche il configuratore 3D web qui sopra e un'implementazione completa di **GEO** (`llms.txt`, dati strutturati JSON-LD, riscrittura dei contenuti), perché il catalogo aziendale venisse interpretato e citato correttamente dai motori di ricerca generativi.
+Ho realizzato i tre progetti qui sopra: DecAI, il configuratore 3D e l'implementazione GEO — un assistente di retrieval per la forza vendita, uno strumento di vendita in browser che sostituisce il catalogo PDF, e un layer di contenuti strutturati che rende lo storico produttivo dell'azienda citabile dai motori di ricerca generativi.
 
 **iLeader** — *Founder*<br>
 Consulenza AI e sviluppo su misura per PMI italiane: assistenti conversazionali, RAG sulla documentazione interna e automazioni agentiche costruite su Claude con connettori MCP verso i sistemi che il cliente già usa — CRM, mail, gestionale, storage documentale. In aggiunta, lavoro di visibilità sui motori generativi.
 
 **Marc_fitandrun** — *Founder & Running Coach*<br>
-Coaching data-driven per corsa su strada e trail. Audit telemetrici della performance, programmi di coaching continuativo e uno stack di marketing che si automatizza da sé: contenuti social generati dalle attività Strava, newsletter settimanale e funnel di onboarding che alimenta direttamente MARC_AI.
+Coaching data-driven per corsa su strada e trail. Audit telemetrici della performance, programmi di coaching continuativo e lo stack di marketing automatizzato descritto sopra.
 
 ---
 
@@ -152,7 +145,7 @@ Coaching data-driven per corsa su strada e trail. Audit telemetrici della perfor
 
 ### Parliamone
 
-Disponibile per ruoli di AI engineering e progetti di consulenza — integrazione LLM, sistemi RAG, automazioni agentiche per PMI.
+Disponibile per ruoli di AI engineering e progetti di consulenza — integrazione LLM, sistemi RAG, visibilità sui motori generativi, automazioni agentiche per PMI.
 
 **marco2024redaelli@gmail.com**
 
