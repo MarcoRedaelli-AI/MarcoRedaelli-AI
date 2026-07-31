@@ -40,7 +40,7 @@ Tre sono nati in **Deca Srl**, azienda che produce sistemi di asservimento indus
 
 ### 1 · DecAI — Assistente RAG per una PMI manifatturiera
 
-<img src="DecAI.png" width="100%" alt="Assistente conversazionale DecAI che risponde sul catalogo tecnico di prodotto">
+<img src="DecAI_1.png" width="100%" alt="Assistente conversazionale DecAI che risponde sul catalogo tecnico di prodotto">
 
 Assistente conversazionale interno costruito su una pipeline di **retrieval-augmented generation** sul catalogo tecnico di prodotto — **senza fine-tuning**. Il valore sta nel layer di retrieval, non nei pesi del modello: ingestion e chunking di documentazione tecnica eterogenea, embedding e ricerca vettoriale, reranking, e generazione di risposte ancorate ai documenti sorgente con citazioni verificabili.
 
@@ -52,7 +52,7 @@ Supporta la forza vendita nella qualificazione tecnica e nella costruzione dell'
 
 ### 2 · DECA 3D Editor — Configuratore di prodotto con assistente AI integrato
 
-<a href="https://glb-3d-editor.pages.dev/"><img src="3d-editor.png" width="100%" alt="Configuratore GLB in browser con l'assistente DecAI affiancato alla vista 3D"></a>
+<a href="https://glb-3d-editor.pages.dev/"><img src="3d-editor_3.png" width="100%" alt="Configuratore GLB in browser con l'assistente DecAI affiancato alla vista 3D"></a>
 
 Editor GLB/GLTF in browser per sistemi di asservimento industriale, pensato per sostituire il catalogo PDF statico in un processo di vendita B2B. Gestione varianti, cambio materiali, rendering in tempo reale, viewer condivisibile e generazione 3D a partire da una foto o da una descrizione testuale.
 
@@ -64,13 +64,19 @@ Nella versione attuale configuratore e assistente RAG sono un prodotto solo: Dec
 
 ### 3 · GEO — Rendere un'azienda manifatturiera leggibile dalle AI
 
-I motori generativi non citano ciò che non riescono a interpretare. Questa PMI aveva anni di impianti consegnati documentati come record di commessa interni e PDF — invisibili a qualunque modello debba rispondere a *"chi produce alimentatori vibranti in Lombardia"*.
+<img src="geo-deca.png" width="100%" alt="ChatGPT, Claude e Gemini — i motori generativi a cui è rivolto il lavoro sui dati strutturati">
 
-Ho costruito una pipeline di generazione che trasforma quello storico produttivo in cento schede strutturate, una per impianto consegnato, organizzate per famiglia di prodotto, ciascuna con dati tecnici, media e markup JSON-LD. Insieme: un manifesto `llms.txt`, HTML semantico e una riscrittura dei contenuti di catalogo perché sopravvivano intatti a chunking e retrieval.
+I motori generativi citano ciò che riescono a interpretare. Gli impianti consegnati da questa azienda vivevano in due posti che non si parlavano: un foglio di schede realizzazione e un archivio di rete con i modelli 3D, organizzato per componente e non per commessa. Niente collegava una scheda ai suoi file di progetto, e niente sulle pagine pubbliche diceva a un modello che cosa fossero.
+
+Ho inventariato l'archivio componente per componente e agganciato ogni scheda ai suoi file reali, poi ho costruito un catalogo prototipo navigabile — un centinaio di pagine su 35 famiglie di prodotto, raggruppate per acronimo, così che sito, foglio e archivio raccontassero finalmente la stessa gerarchia.
+
+Poi la scoperta che contava. Quarantadue file di dati strutturati erano stati scritti ed erano validi — e nessuno di essi era su una pagina. Nel sorgente pubblicato non esisteva alcun blocco `application/ld+json`. Contenuto corretto, che viveva dentro un foglio Excel: per i crawler, inesistente.
+
+Ho quindi generato la cosa vera: un unico grafo collegato di **65 nodi** con l'anagrafica aziendale, la pagina raccolta, 19 elenchi per famiglia e 42 schede prodotto. Dodici proprietà inventate — fuori dal vocabolario schema.org, quindi ignorate in silenzio dai validatori — sono diventate **334 `PropertyValue`** dentro `additionalProperty`: stesso contenuto, contenitore corretto. Le proprietà standard che i modelli leggono davvero (`url`, `sku`, `brand`, `manufacturer`, `isSimilarTo`) sono state popolate da dati già presenti nel foglio. Verificato prima della consegna: 65 identificativi univoci, 294 riferimenti interni risolti, zero termini fuori vocabolario.
 
 Il punto non sono le keyword. È che il lavoro reale, specifico e verificabile di un fornitore diventa materiale recuperabile su cui un modello può ancorare una risposta.
 
-`Static Site Generation` · `JSON-LD` · `llms.txt` · `Schema.org` · `Firebase Hosting`
+`JSON-LD` · `Schema.org` · `llms.txt` · `Static Site Generation` · `Firebase Hosting`
 
 ---
 
