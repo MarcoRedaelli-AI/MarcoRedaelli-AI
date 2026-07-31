@@ -1,17 +1,18 @@
-<dhiv align="center">
+<div align="center">
 
 **English** · [Italiano](README.it.md)
 
 # Marco Redaelli
 
-### AI Engineer & Runner
+### AI Engineer & Runner — Lecco, Italy
 
 Building AI products, software and digital businesses.<br>
 Founder of **[iLeader](https://illeader.vercel.app/)** (AI consulting for Italian SMEs) and **[Marc_fitandrun](https://marcfitandrun.com)** (data-driven running coaching).
 
 [![Website](https://img.shields.io/badge/iLeader-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://illeader.vercel.app/)
 [![Marc_fitandrun](https://img.shields.io/badge/Marc__fitandrun-FC5200?style=for-the-badge&logo=strava&logoColor=white)](https://marcfitandrun.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marco-redaelli-b26237221)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcoredaelli-ai)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Marco20262026)
 [![X](https://img.shields.io/badge/@Marco10Reda-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Marco10Reda)
 
 </div>
@@ -20,11 +21,12 @@ Founder of **[iLeader](https://illeader.vercel.app/)** (AI consulting for Italia
 
 ## About
 
-I'm an AI Engineer based near Lake Como, Italy. I work at the intersection of **large language models** and **real industrial problems** — the kind of company that makes physical products, has a paper-based technical office, and has never deployed a model in its life.
+I'm Marco Redaelli, an AI Engineer based near Lake Como, Italy. I work at the intersection of **large language models** and **real industrial problems** — the kind of company that makes physical products, has a paper-based technical office, and has never deployed a model in its life.
 
 My day-to-day is building RAG pipelines over messy internal documentation, wiring agents into the tools a business already uses, and training models when the task actually calls for it. On the side I run two products of my own, and about 80 km a week on the road.
 
 - Industrial Production Engineering — Politecnico di Milano (Lecco)
+- Based in Valgreghentino, province of Lecco — working with SMEs across Lombardy
 - Marathon PB: **2h50** — which is also the reason MARC_AI exists
 - Currently interested in: agentic workflows, MCP, embodied AI, generative search visibility
 
@@ -51,51 +53,52 @@ It supports the sales team during technical qualification and quoting, answering
 
 ---
 
-### Other work
+### Web 3D Product Configurator
+
+[<img src="3d-editor.png" width="100%" alt="Web-based 3D GLB product configurator">](https://github.com/MarcoRedaelli-AI/3D-Editor-Deca-S.r.l.)
+
+Browser-based GLB editor for interactive product customisation. Variant handling, material swapping and real-time rendering, built to replace static PDF catalogues in a B2B sales process.
+
+`React` · `Three.js` · `WebGL` · `Cloudflare Pages` — [repository](https://github.com/MarcoRedaelli-AI/3D-Editor-Deca-S.r.l.)
+
+---
+
+### Unitree G1 — Humanoid Reinforcement Learning
+
+[<img src="unitree-g1.png" width="100%" alt="Unitree G1 humanoid robot simulation">](https://github.com/MarcoRedaelli-AI/Unitree-G1-Robot)
+
+SDK integration, simulation and reinforcement learning environments for the Unitree G1 humanoid. Locomotion policy training in Isaac Lab and MuJoCo, plus configuration and deployment scripts.
+
+`Python` · `Isaac Lab` · `MuJoCo` · `RL` — [repository](https://github.com/MarcoRedaelli-AI/Unitree-G1-Robot)
+
+---
+
+### MARC_AI — Training Intelligence
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/marco2024redaelli-hash/3D-Editor-Deca-S.r.l.">
-        <img src="3d-editor.png" width="100%" alt="Web-based 3D GLB editor">
-      </a>
-      <h3>Web 3D Product Configurator</h3>
-      <p>Browser-based GLB editor for interactive product customisation. Variant handling, material swapping and real-time rendering, built to replace static PDF catalogues in a B2B sales process.</p>
-      <p><code>React</code> <code>Three.js</code> <code>WebGL</code> <code>Cloudflare Pages</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/marco2024redaelli-hash/Unitree-G1-Robot">
-        <img src="unitree-g1.png" width="100%" alt="Unitree G1 humanoid simulation">
-      </a>
-      <h3>Unitree G1 — Humanoid RL</h3>
-      <p>SDK integration, simulation and reinforcement learning environments for the Unitree G1 humanoid. Locomotion policy training in Isaac Lab and MuJoCo, plus configuration and deployment scripts.</p>
-      <p><code>Python</code> <code>Isaac Lab</code> <code>MuJoCo</code> <code>RL</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://marcfitandrun.com">
-        <img src="Immagine%202026-07-30%20150557.jpg" width="100%" alt="Marc_fitandrun coaching platform — home">
-      </a>
-      <a href="https://marcfitandrun.com">
-        <img src="Immagine%202026-07-30%20150748.jpg" width="100%" alt="Marc_fitandrun coaching platform — training plans">
-      </a>
-      <h3>MARC_AI — Training Intelligence</h3>
-      <p>The engine behind my coaching brand. Ingests Strava telemetry and an 18-variable athlete profile, then generates and adapts training plans. Includes an automated Strava → Instagram Stories content pipeline.</p>
-      <p><code>Python</code> <code>FastAPI</code> <code>Strava API</code> <code>PIL</code> <code>Claude API</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/marco2024redaelli-hash/Visualizzatore-STEP">
-        <img src="step-viewer.png" width="100%" alt="STEP file viewer">
-      </a>
-      <h3>STEP File Viewer</h3>
-      <p>Python parser and viewer for STEP CAD files — geometry extraction, metadata reading and mesh conversion. Groundwork for automated CAD-to-web pipelines.</p>
-      <p><code>Python</code> <code>OpenCascade</code> <code>CAD</code></p>
-    </td>
+    <td width="50%"><a href="https://marcfitandrun.com"><img src="marcfitandrun-home.jpg" width="100%" alt="Marc_fitandrun coaching platform home page"></a></td>
+    <td width="50%"><a href="https://marcfitandrun.com"><img src="marcfitandrun-plans.jpg" width="100%" alt="Marc_fitandrun training plans page"></a></td>
   </tr>
 </table>
 
-**Also here:** [Openclaw](https://github.com/marco2024redaelli-hash/Openclaw) — interactive HTML guide for installing and configuring OpenClaw on a Raspberry Pi 4 · [Claude Project](https://github.com/marco2024redaelli-hash/Claude-Project) — experiments built with the Anthropic API and MCP.
+The engine behind my coaching brand. Ingests Strava telemetry and an 18-variable athlete profile, then generates and adapts training plans. Includes an automated Strava → Instagram Stories content pipeline.
+
+`Python` · `FastAPI` · `Strava API` · `PIL` · `Claude API` — [marcfitandrun.com](https://marcfitandrun.com)
+
+---
+
+### STEP File Viewer
+
+[<img src="step-viewer.png" width="100%" alt="STEP CAD file viewer">](https://github.com/MarcoRedaelli-AI/Visualizzatore-STEP)
+
+Python parser and viewer for STEP CAD files — geometry extraction, metadata reading and mesh conversion. Groundwork for automated CAD-to-web pipelines.
+
+`Python` · `OpenCascade` · `CAD` — [repository](https://github.com/MarcoRedaelli-AI/Visualizzatore-STEP)
+
+---
+
+**Also here:** [Openclaw](https://github.com/MarcoRedaelli-AI/Openclaw) — interactive HTML guide for installing and configuring OpenClaw on a Raspberry Pi 4 · [Claude Project](https://github.com/MarcoRedaelli-AI/Claude-Project) — experiments built with the Anthropic API and MCP.
 
 ---
 
@@ -109,6 +112,7 @@ It supports the sales team during technical qualification and quoting, answering
 
 **Agentic automation with Claude** — over a year of daily work with Claude, from Claude 3 Opus through Opus 5: the API, Claude Code, and MCP connectors wiring agents into the systems a business already runs. Most of what I ship is built this way.
 
+---
 
 ## What I Do
 
@@ -152,6 +156,6 @@ Open to AI engineering roles and consulting work — LLM integration, RAG system
 
 **marco2024redaelli@gmail.com**
 
-<sub>Lecco, Italy · <i>Se cerchi la versione italiana, <a href="README.it.md">è qui</a>.</i></sub>
+<sub>Marco Redaelli · Lecco, Italy · <i>Se cerchi la versione italiana, <a href="README.it.md">è qui</a>.</i></sub>
 
 </div>
